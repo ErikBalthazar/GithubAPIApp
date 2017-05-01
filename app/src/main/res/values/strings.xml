@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GithubAPI</string>
+
+    <!-- MainActivity -->
+    <string name="user_search_button_text">Pesquisar usuários</string>
+    <string name="repository_search_button_text">Pesquisar repositórios</string>
+
+    <!-- UserSearchActivity -->
+    <string name="user_search_text_hint">Digite o nome do usuário</string>
+    <string name="user_search_search_button_text">Pesquisar</string>
+</resources>
