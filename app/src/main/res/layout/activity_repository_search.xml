@@ -8,10 +8,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.erik.githubapi.UserSearchActivity">
+    tools:context="com.erik.githubapi.RepositorySearchActivity">
 
     <LinearLayout
-        android:id="@+id/user_search_text_layout"
+        android:id="@+id/repository_search_text_layout"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,15 +23,15 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/user_search_text"
-            android:hint="@string/user_search_text_hint"
+            android:id="@+id/repository_search_text"
+            android:hint="@string/repository_search_text_hint"
             android:layout_weight="1" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/user_search_search_button_text"
-            android:id="@+id/user_search_search_button" />
+            android:text="@string/repository_search_search_button_text"
+            android:id="@+id/repository_search_search_button" />
     </LinearLayout>
 
     <RelativeLayout
@@ -39,22 +39,22 @@
         android:layout_height="match_parent"
         android:gravity="center">
         <ProgressBar
-            android:id="@+id/user_search_progressbar"
+            android:id="@+id/repository_search_progressbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:indeterminate="true"
             android:layout_centerHorizontal="true"
             android:visibility="gone" />
         <TextView
-            android:id="@+id/user_search_no_results_text"
+            android:id="@+id/repository_search_no_results_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:textSize="15sp"
-            android:text="@string/user_search_no_results_message"
+            android:text="@string/repository_search_no_results_message"
             android:visibility="gone"/>
         <ListView
-            android:id="@+id/user_list"
+            android:id="@+id/repository_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"

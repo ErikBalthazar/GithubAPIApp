@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle(R.string.main_activity_title);
         setContentView(R.layout.activity_main);
         mUserSearchButton = (Button) findViewById(R.id.user_search_button);
         mRepositorySearchButton = (Button) findViewById(R.id.repository_search_button);
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         mRepositorySearchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent repositorySearchIntent = new Intent(MainActivity.this, RepositorySearchActivity.class);
+                MainActivity.this.startActivity(repositorySearchIntent);
             }
         });
     }
